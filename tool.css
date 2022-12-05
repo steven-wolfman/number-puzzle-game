@@ -1,0 +1,22 @@
+table.puzzle-style {
+    border: 1px solid black;
+    table-layout: fixed;
+}
+  
+table.puzzle-style th,
+table.puzzle-style td {
+    border: 1px solid black;
+    width: 25px;
+    overflow: hidden;
+    user-select: none;
+    text-align: center;
+}
+
+table.puzzle-style tr {
+    line-height: 25px;
+}
+
+td.puzzle-selected {
+    background-color: black;
+    color: white;
+}

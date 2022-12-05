@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Puzzle Builder Tool</title>
+        <link rel="stylesheet" href="tool.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="two-five-tool.js"></script>
+    </head>
+    <body>
+
+        <h1>Prepare Your Puzzle</h1>
+
+            <p><button type="button" id="hide-gen">Toggle the Puzzle Creation Display</button></p>
+            <div id="puzzle-creation">
+                <p>Make your images by clicking the table cells below! <!-- Choose four images you want to embed in your puzzle. Each must be <span class="dimension-constant">??</span> pixels by <span class="dimension-constant">??</span> pixels. --></p>
+
+        <dl>
+            <dt>Even/Odd</dt>
+            <dd><table class="puzzle-gen-only puzzle-style puzzle-input even-odd"></table></dd>
+        </dl>
+
+        <dl>
+            <dt>Big/Small</dt>
+            <dd><table class="puzzle-gen-only puzzle-style puzzle-input big-small"></table></dd>
+        </dl>
+
+        <dl>
+            <dt>Fives</dt>
+            <dd><table class="puzzle-gen-only puzzle-style puzzle-input fives"></table></dd>
+        </dl>
+
+        <dl>
+            <dt>Positive/Negative</dt>
+            <dd><table class="puzzle-gen-only puzzle-style puzzle-input pos-neg"></table></dd>
+        </dl>
+    </div>
+
+        <h1>Results!</h1>
+
+        <p><button type="button" id="generate-puzzle">Build the Puzzle!</button></p>
+        <p><table class="puzzle-style puzzle-display">
+        </table></p>
+    </body>
+</html>
